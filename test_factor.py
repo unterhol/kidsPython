@@ -23,6 +23,10 @@ class TestFactor(unittest.TestCase):
         self.assertEqual(v1, -4)
         self.assertEqual(v2, -3)
 
+        ans = check_factorable(-9, -22)
+        self.assertEqual(ans[0], -11)
+        self.assertEqual(ans[1], 2)
+
         ans = check_factorable(10, 1)
         self.assertIsNone(ans)
 
